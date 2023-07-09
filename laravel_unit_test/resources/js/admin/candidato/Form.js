@@ -6,6 +6,7 @@ Vue.component('candidato-form', {
         return {
             form: {
                 nome:  '' ,
+                apelido:  '' ,
                 email:  '' ,
                 telefone:  '' ,
                 aprovado:  '' ,

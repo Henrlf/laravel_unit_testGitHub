@@ -30,3 +30,24 @@ $factory->define(App\Models\Candidato::class, static function (Faker\Generator $
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\TableName::class, static function (Faker\Generator $faker) {
+    return [
+        
+        
+    ];
+});
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Candidato::class, static function (Faker\Generator $faker) {
+    return [
+        'nome' => $faker->sentence,
+        'apelido' => $faker->sentence,
+        'email' => $faker->email,
+        'telefone' => $faker->sentence,
+        'aprovado' => $faker->randomNumber(5),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

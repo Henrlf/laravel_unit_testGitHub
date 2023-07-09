@@ -25,7 +25,7 @@ class IndexCandidato extends FormRequest
     public function rules(): array
     {
         return [
-            'orderBy' => 'in:id,nome,email,telefone,aprovado|nullable',
+            'orderBy' => 'in:id,nome,apelido,email,telefone,aprovado|nullable',
             'orderDirection' => 'in:asc,desc|nullable',
             'search' => 'string|nullable',
             'page' => 'integer|nullable',
