@@ -49,5 +49,25 @@ return [
         ],
     ],
 
+    'candidato' => [
+        'title' => 'Candidatos',
+
+        'actions' => [
+            'index' => 'Candidatos',
+            'create' => 'New Candidato',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'nome' => 'Nome',
+            'apelido' => 'Apelido',
+            'email' => 'Email',
+            'telefone' => 'Telefone',
+            'aprovado' => 'Aprovado',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

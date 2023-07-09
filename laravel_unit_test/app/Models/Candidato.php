@@ -2,12 +2,32 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Candidato extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'nome',
+        'apelido',
+        'email',
+        'telefone',
+        'aprovado',
+    
+    ];
+    
+    
+    protected $dates = [
+        'created_at',
+        'updated_at',
+    
+    ];
+    
+    protected $appends = ['resource_url'];
 
-    protected $fillable = ['nome', 'email', 'telefone', 'aprovado'];
+    /* ************************ ACCESSOR ************************* */
+
+    public function getResourceUrlAttribute()
+    {
+        return url('/admin/candidatos/'.$this->getKey());
+    }
 }

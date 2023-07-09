@@ -6,6 +6,14 @@
     </div>
 </div>
 
+<div class="form-group row align-items-center" :class="{'has-danger': errors.has('apelido'), 'has-success': fields.apelido && fields.apelido.valid }">
+    <label for="apelido" class="col-form-label text-md-right" :class="isFormLocalized ? 'col-md-4' : 'col-md-2'">{{ trans('admin.candidato.columns.apelido') }}</label>
+        <div :class="isFormLocalized ? 'col-md-4' : 'col-md-9 col-xl-8'">
+        <input type="text" v-model="form.apelido" v-validate="'required'" @input="validate($event)" class="form-control" :class="{'form-control-danger': errors.has('apelido'), 'form-control-success': fields.apelido && fields.apelido.valid}" id="apelido" name="apelido" placeholder="{{ trans('admin.candidato.columns.apelido') }}">
+        <div v-if="errors.has('apelido')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('apelido') }}</div>
+    </div>
+</div>
+
 <div class="form-group row align-items-center" :class="{'has-danger': errors.has('email'), 'has-success': fields.email && fields.email.valid }">
     <label for="email" class="col-form-label text-md-right" :class="isFormLocalized ? 'col-md-4' : 'col-md-2'">{{ trans('admin.candidato.columns.email') }}</label>
         <div :class="isFormLocalized ? 'col-md-4' : 'col-md-9 col-xl-8'">
