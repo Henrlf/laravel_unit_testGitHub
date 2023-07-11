@@ -23,15 +23,15 @@ return [
             'activated' => 'Activated',
             'forbidden' => 'Forbidden',
             'language' => 'Language',
-                
+
             //Belongs to many relations
             'roles' => 'Roles',
-                
+
         ],
     ],
 
     'candidato' => [
-        'title' => 'Candidatos',
+        'title' => 'Teste',
 
         'actions' => [
             'index' => 'Candidatos',
@@ -45,46 +45,7 @@ return [
             'email' => 'Email',
             'telefone' => 'Telefone',
             'aprovado' => 'Aprovado',
-            
-        ],
-    ],
 
-    'candidato' => [
-        'title' => 'Candidatos',
-
-        'actions' => [
-            'index' => 'Candidatos',
-            'create' => 'New Candidato',
-            'edit' => 'Edit :name',
-        ],
-
-        'columns' => [
-            'id' => 'ID',
-            'nome' => 'Nome',
-            'apelido' => 'Apelido',
-            'email' => 'Email',
-            'telefone' => 'Telefone',
-            'aprovado' => 'Aprovado',
-            
-        ],
-    ],
-
-    'candidato' => [
-        'title' => 'Candidatos',
-
-        'actions' => [
-            'index' => 'Candidatos',
-            'create' => 'New Candidato',
-            'edit' => 'Edit :name',
-        ],
-
-        'columns' => [
-            'id' => 'ID',
-            'nome' => 'Nome',
-            'email' => 'Email',
-            'telefone' => 'Telefone',
-            'aprovado' => 'Aprovado',
-            
         ],
     ],
 
