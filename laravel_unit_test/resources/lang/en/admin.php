@@ -34,7 +34,7 @@ return [
         'title' => 'Teste',
 
         'actions' => [
-            'index' => 'Candidatos',
+            'index' => 'Candidato Alterado',
             'create' => 'New Candidato',
             'edit' => 'Edit :name',
         ],
