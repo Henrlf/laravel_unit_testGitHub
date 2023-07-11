@@ -8,7 +8,6 @@ class Candidato extends Model
 {
     protected $fillable = [
         'nome',
-        'apelido',
         'email',
         'telefone',
         'aprovado',

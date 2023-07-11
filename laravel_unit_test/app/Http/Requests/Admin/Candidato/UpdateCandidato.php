@@ -27,7 +27,6 @@ class UpdateCandidato extends FormRequest
     {
         return [
             'nome' => ['sometimes', 'string'],
-            'apelido' => ['sometimes', 'string'],
             'email' => ['sometimes', 'email', 'string'],
             'telefone' => ['sometimes', 'string'],
             'aprovado' => ['sometimes', 'integer'],

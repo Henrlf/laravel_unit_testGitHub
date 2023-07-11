@@ -37,10 +37,10 @@ class CandidatosController extends Controller
             $request,
 
             // set columns to query
-            ['id', 'nome', 'apelido', 'email', 'telefone', 'aprovado'],
+            ['id', 'nome', 'email', 'telefone', 'aprovado'],
 
             // set columns to searchIn
-            ['id', 'nome', 'apelido', 'email', 'telefone']
+            ['id', 'nome', 'email', 'telefone']
         );
 
         if ($request->ajax()) {

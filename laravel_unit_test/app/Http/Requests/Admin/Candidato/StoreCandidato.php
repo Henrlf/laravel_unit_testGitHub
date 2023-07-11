@@ -27,7 +27,6 @@ class StoreCandidato extends FormRequest
     {
         return [
             'nome' => ['required', 'string'],
-            'apelido' => ['required', 'string'],
             'email' => ['required', 'email', 'string'],
             'telefone' => ['required', 'string'],
             'aprovado' => ['required', 'integer'],
